@@ -836,11 +836,11 @@ lib.properties = {
 	color: "#E1E1E1",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/mixkitretrogamenotification212wav.mp3?1669678818367", id:"mixkitretrogamenotification212wav"},
-		{src:"sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3?1669678818367", id:"mixkittribaldrummingambience572mp3cutnetwav"},
-		{src:"sounds/ohgeezwav.mp3?1669678818367", id:"ohgeezwav"},
-		{src:"sounds/turnTheGuidesOffwav.mp3?1669678818367", id:"turnTheGuidesOffwav"},
-		{src:"sounds/whipwav.mp3?1669678818367", id:"whipwav"}
+		{src:"sounds/mixkitretrogamenotification212wav.mp3?1669684867118", id:"mixkitretrogamenotification212wav"},
+		{src:"sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3?1669684867118", id:"mixkittribaldrummingambience572mp3cutnetwav"},
+		{src:"sounds/ohgeezwav.mp3?1669684867118", id:"ohgeezwav"},
+		{src:"sounds/turnTheGuidesOffwav.mp3?1669684867118", id:"turnTheGuidesOffwav"},
+		{src:"sounds/whipwav.mp3?1669684867118", id:"whipwav"}
 	],
 	preloads: []
 };
