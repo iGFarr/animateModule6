@@ -62,7 +62,7 @@ lib.ssMetadata = [
 			}
 		}
 	}
-	this.InsertIntoSoundStreamData = function(soundInstance, startIndex, endIndex, loopValue, offsetValue){ 
+	this.InsertIntoSoundStreamData = function(soundInstance, startIndex, endIndex, loopValue, offsetValue){
  		this.soundStreamDuration.set({instance:soundInstance}, {start: startIndex, end:endIndex, loop:loopValue, offset:offsetValue});
 	}
 	this.clearAllSoundStreams = function(){
@@ -805,15 +805,15 @@ if (reversed == null) { reversed = false; }
 	// timeline functions:
 	this.frame_0 = function() {
 		this.clearAllSoundStreams();
-		 
+
 		var _this = this;
 		/*
 		Stop a Movie Clip/Video
 		Stops the specified movie clip or video.
 		*/
 		_this.stop();
-		
-		
+
+
 		var _this = this;
 		/*
 		Clicking on the specified symbol instance executes a function.
@@ -889,8 +889,8 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.gotoAndStop(0);
 		});
-		
-		
+
+
 		var _this = this;
 		/*
 		Clicking on the specified symbol instance executes a function.
@@ -910,24 +910,24 @@ if (reversed == null) { reversed = false; }
 		_this.stop();
 		_this.notTheButton.on("pressmove", moveChar);
 		_this.notTheButton.on("stagemouseup", dropChar);
-		
+
 		function moveChar(e) {
 			e.currentTarget.x = (e.stageX / stage.scaleX);
 			e.currentTarget.y = (e.stageY / stage.scaleY);
-			e.currentTarget.on("mouseup", dropChar);	
+			e.currentTarget.on("mouseup", dropChar);
 		}
-		
+
 		function dropChar(e) {
 			_this.TheNottestOne.gotoAndStop('justStanding');
 		}
-		
+
 		var _this = this;
 		/*
 		Mousing over the specified symbol instance executes a function.
 		'3' is the number of the times event should be triggered.
 		*/
 		stage.enableMouseOver(3);
-		
+
 		_this.notTheButton.on('mousedown', function(){
 		/*
 		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
@@ -980,8 +980,8 @@ if (reversed == null) { reversed = false; }
 		*/
 		_this.gotoAndStop(0);
 		});
-		
-		
+
+
 		var _this = this;
 		/*
 		Clicking on the specified symbol instance executes a function.
@@ -1436,12 +1436,12 @@ lib.properties = {
 	color: "#E1E1E1",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/FrameByFrameModule6Revisions_atlas_1.png?1669805602313", id:"FrameByFrameModule6Revisions_atlas_1"},
-		{src:"Sounds/mixkitretrogamenotification212wav.mp3?1669805602432", id:"mixkitretrogamenotification212wav"},
-		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3?1669805602432", id:"mixkittribaldrummingambience572mp3cutnetwav"},
-		{src:"Sounds/ohgeezwav.mp3?1669805602432", id:"ohgeezwav"},
-		{src:"Sounds/turnTheGuidesOffwav.mp3?1669805602432", id:"turnTheGuidesOffwav"},
-		{src:"Sounds/whipwav.mp3?1669805602432", id:"whipwav"}
+		{src:"images/FrameByFrameModule6Revisions_atlas_1.png", id:"FrameByFrameModule6Revisions_atlas_1"},
+		{src:"Sounds/mixkitretrogamenotification212wav.mp3", id:"mixkitretrogamenotification212wav"},
+		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3", id:"mixkittribaldrummingambience572mp3cutnetwav"},
+		{src:"Sounds/ohgeezwav.mp3", id:"ohgeezwav"},
+		{src:"Sounds/turnTheGuidesOffwav.mp3", id:"turnTheGuidesOffwav"},
+		{src:"Sounds/whipwav.mp3", id:"whipwav"}
 	],
 	preloads: []
 };
@@ -1498,41 +1498,41 @@ an.getComposition = function(id) {
 }
 
 
-an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
-	var lastW, lastH, lastS=1;		
-	window.addEventListener('resize', resizeCanvas);		
-	resizeCanvas();		
-	function resizeCanvas() {			
-		var w = lib.properties.width, h = lib.properties.height;			
-		var iw = window.innerWidth, ih=window.innerHeight;			
-		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-		if(isResp) {                
-			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
-				sRatio = lastS;                
-			}				
-			else if(!isScale) {					
-				if(iw<w || ih<h)						
-					sRatio = Math.min(xRatio, yRatio);				
-			}				
-			else if(scaleType==1) {					
-				sRatio = Math.min(xRatio, yRatio);				
-			}				
-			else if(scaleType==2) {					
-				sRatio = Math.max(xRatio, yRatio);				
-			}			
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {
+	var lastW, lastH, lastS=1;
+	window.addEventListener('resize', resizeCanvas);
+	resizeCanvas();
+	function resizeCanvas() {
+		var w = lib.properties.width, h = lib.properties.height;
+		var iw = window.innerWidth, ih=window.innerHeight;
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+		if(isResp) {
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {
+				sRatio = lastS;
+			}
+			else if(!isScale) {
+				if(iw<w || ih<h)
+					sRatio = Math.min(xRatio, yRatio);
+			}
+			else if(scaleType==1) {
+				sRatio = Math.min(xRatio, yRatio);
+			}
+			else if(scaleType==2) {
+				sRatio = Math.max(xRatio, yRatio);
+			}
 		}
-		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].width = w * pRatio * sRatio;
 		domContainers[0].height = h * pRatio * sRatio;
-		domContainers.forEach(function(container) {				
-			container.style.width = w * sRatio + 'px';				
-			container.style.height = h * sRatio + 'px';			
+		domContainers.forEach(function(container) {
+			container.style.width = w * sRatio + 'px';
+			container.style.height = h * sRatio + 'px';
 		});
-		stage.scaleX = pRatio*sRatio;			
+		stage.scaleX = pRatio*sRatio;
 		stage.scaleY = pRatio*sRatio;
-		lastW = iw; lastH = ih; lastS = sRatio;            
-		stage.tickOnUpdate = false;            
-		stage.update();            
-		stage.tickOnUpdate = true;		
+		lastW = iw; lastH = ih; lastS = sRatio;
+		stage.tickOnUpdate = false;
+		stage.update();
+		stage.tickOnUpdate = true;
 	}
 }
 an.handleSoundStreamOnTick = function(event) {
