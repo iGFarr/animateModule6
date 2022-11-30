@@ -14,7 +14,7 @@
 <title>FrameByFrameModule6Revisions</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="FrameByFrameModule6Revisions.js"></script>
+<script src="FrameByFrameModule6Revisions.js?1669793028600"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -40,16 +40,16 @@ function handleComplete(evt,comp) {
 	}
 	exportRoot = new lib.FrameByFrameModule6Revisions();
 	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.framerate = lib.properties.fps;
 		createjs.Ticker.addEventListener("tick", stage);
 		createjs.Ticker.addEventListener("tick", AdobeAn.handleSoundStreamOnTick);
-	}
+	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
