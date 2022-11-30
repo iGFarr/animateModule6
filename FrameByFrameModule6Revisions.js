@@ -1436,12 +1436,12 @@ lib.properties = {
 	color: "#E1E1E1",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/FrameByFrameModule6Revisions_atlas_1.png?1669805602313", id:"FrameByFrameModule6Revisions_atlas_1"},
-		{src:"Sounds/mixkitretrogamenotification212wav.mp3?1669805602432", id:"mixkitretrogamenotification212wav"},
-		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3?1669805602432", id:"mixkittribaldrummingambience572mp3cutnetwav"},
-		{src:"Sounds/ohgeezwav.mp3?1669805602432", id:"ohgeezwav"},
-		{src:"Sounds/turnTheGuidesOffwav.mp3?1669805602432", id:"turnTheGuidesOffwav"},
-		{src:"Sounds/whipwav.mp3?1669805602432", id:"whipwav"}
+		{src:"images/FrameByFrameModule6Revisions_atlas_1.png", id:"FrameByFrameModule6Revisions_atlas_1"},
+		{src:"Sounds/mixkitretrogamenotification212wav.mp3", id:"mixkitretrogamenotification212wav"},
+		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3", id:"mixkittribaldrummingambience572mp3cutnetwav"},
+		{src:"Sounds/ohgeezwav.mp3", id:"ohgeezwav"},
+		{src:"Sounds/turnTheGuidesOffwav.mp3", id:"turnTheGuidesOffwav"},
+		{src:"Sounds/whipwav.mp3", id:"whipwav"}
 	],
 	preloads: []
 };
