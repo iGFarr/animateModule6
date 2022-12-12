@@ -1506,15 +1506,15 @@ lib.properties = {
 	color: "#E1E1E1",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/myapp.jpg?1670802397351", id:"myapp"},
-		{src:"images/theirapp.jpg?1670802397351", id:"theirapp"},
-		{src:"images/FrameByFrameModule6Revisions_atlas_1.png?1670802397197", id:"FrameByFrameModule6Revisions_atlas_1"},
-		{src:"Sounds/mixkitretrogamenotification212wav.mp3?1670802397351", id:"mixkitretrogamenotification212wav"},
-		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3?1670802397351", id:"mixkittribaldrummingambience572mp3cutnetwav"},
-		{src:"Sounds/ohgeezwav.mp3?1670802397351", id:"ohgeezwav"},
-		{src:"Sounds/outromonologuewav.mp3?1670802397351", id:"outromonologuewav"},
-		{src:"Sounds/turnTheGuidesOffwav.mp3?1670802397351", id:"turnTheGuidesOffwav"},
-		{src:"Sounds/whipwav.mp3?1670802397351", id:"whipwav"}
+		{src:"images/myapp.jpg", id:"myapp"},
+		{src:"images/theirapp.jpg", id:"theirapp"},
+		{src:"images/FrameByFrameModule6Revisions_atlas_1.png", id:"FrameByFrameModule6Revisions_atlas_1"},
+		{src:"Sounds/mixkitretrogamenotification212wav.mp3", id:"mixkitretrogamenotification212wav"},
+		{src:"Sounds/mixkittribaldrummingambience572mp3cutnetwav.mp3", id:"mixkittribaldrummingambience572mp3cutnetwav"},
+		{src:"Sounds/ohgeezwav.mp3", id:"ohgeezwav"},
+		{src:"Sounds/outromonologuewav.mp3", id:"outromonologuewav"},
+		{src:"Sounds/turnTheGuidesOffwav.mp3", id:"turnTheGuidesOffwav"},
+		{src:"Sounds/whipwav.mp3", id:"whipwav"}
 	],
 	preloads: []
 };
